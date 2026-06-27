@@ -1,11 +1,13 @@
 // server_launch.js
-// This is the master configuration file for the Swarm Network.
-// It is automatically fetched by the desktop app and the miner worker.
+// Master configuration and Web Worker logic for the Global Swarm Network.
+// Upgraded for v2.0 Enterprise DePIN Architecture.
 
 window.HIRAYA_CONFIG = {
-    server_ip: "16.176.49.158", // Automatically routes all apps to this backend IP
-    miner_enabled: true,        // Set to false to remotely disable all mining nodes
-    reward_rate: 50             // Approximate coins per hour per node
+    server_ip: "node1.hirayamesh.online", // Upgraded to Cloudflare DNS Routing
+    server_port: 8080,                    // Upgraded to Adaptive WebSocket Port
+    miner_enabled: true,                  // Swarm miner active
+    reward_rate: 50,                      // Approximate Swarm Coins per hour per node
+    network_type: "DePIN"                 // Decentralized Physical Infrastructure Network
 };
 
 // Define the mining algorithm the browser will execute
