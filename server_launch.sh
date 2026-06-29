@@ -57,7 +57,7 @@ if [ "$MACHINE_TYPE" == "1" ]; then
     python3 -m venv venv
     source venv/bin/activate
     pip install --upgrade pip
-    pip install fastapi uvicorn websockets pydantic pyyaml psutil aiohttp cryptography
+    pip install fastapi uvicorn websockets pydantic pyyaml psutil aiohttp cryptography httpx python-multipart
 
     echo "🔄 Starting the Swarm Server..."
     pkill -f "python.*main.py" || true
